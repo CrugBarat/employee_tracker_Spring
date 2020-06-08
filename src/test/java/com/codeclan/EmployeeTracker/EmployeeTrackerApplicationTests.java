@@ -37,4 +37,12 @@ class EmployeeTrackerApplicationTests {
 		employeeRepository.save(employee6);
 	}
 
+	@Test
+	public void canDeleteById() {
+		Employee employee7 = new Employee("Tony Jamieson", 29, 2878478, "tony_jamieson@email.com");
+		employeeRepository.save(employee7);
+		employeeRepository.deleteById(employee7.getId());
+		assertThat(employeeRepository.count()).isEqualTo(18);
+	}
+
 }
