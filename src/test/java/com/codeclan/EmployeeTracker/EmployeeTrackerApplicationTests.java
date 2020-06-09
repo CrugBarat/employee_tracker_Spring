@@ -1,5 +1,7 @@
 package com.codeclan.EmployeeTracker;
+import com.codeclan.EmployeeTracker.models.Department;
 import com.codeclan.EmployeeTracker.models.Employee;
+import com.codeclan.EmployeeTracker.repositories.DepartmentRepository;
 import com.codeclan.EmployeeTracker.repositories.EmployeeRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
