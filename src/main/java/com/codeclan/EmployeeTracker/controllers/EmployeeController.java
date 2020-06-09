@@ -15,12 +15,12 @@ public class EmployeeController {
     private EmployeeRepository employeeRepository;
 
     @GetMapping(value = "/employees")
-    public List<Employee> getAllEmplyees(){
+    public List<Employee> getAllEmployees(){
         return employeeRepository.findAll();
     }
 
     @GetMapping(value = "/employees/{id}")
-    public Optional<Employee> getPirate(@PathVariable Long id) {
+    public Optional<Employee> getEmployee(@PathVariable Long id) {
         return employeeRepository.findById(id);
     }
 
