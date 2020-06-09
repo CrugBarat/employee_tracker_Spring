@@ -18,3 +18,4 @@ out/
 target/
 .idea_modules/
 .DS_Store
+*.db
