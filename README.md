@@ -14,6 +14,8 @@ Create a Spring Boot application for recording employee data that has:
 - A repository for doing database operations
 - A RestController with one route for getting a JSON list of all Employees
 
+---
+
 ## Brief - Part 2
 
 In this lab, use what you’ve learned about one-to-many and many-to-many to create an application for a company to track their employees, departments and projects.
