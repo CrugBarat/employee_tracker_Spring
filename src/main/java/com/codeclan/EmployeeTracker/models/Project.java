@@ -1,6 +1,7 @@
 package com.codeclan.EmployeeTracker.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class Project {
     @Column(name = "number_of_days")
     private int numberOfDays;
 
-    @JsonIgnore
+    @JsonIgnoreProperties("projects")
     @ManyToMany
     @JoinTable(
             name = "employee_projects",
