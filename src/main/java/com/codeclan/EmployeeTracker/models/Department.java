@@ -37,6 +37,10 @@ public class Department {
         return employees;
     }
 
+    public void addEmployee(Employee employee) {
+        this.employees.add(employee);
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
